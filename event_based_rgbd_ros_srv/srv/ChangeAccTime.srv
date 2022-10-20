@@ -1,0 +1,4 @@
+uint16 input_display_acc_time
+uint8 get
+---
+uint16 result

@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="event_based_rgbd_ros_driver" type="viewer" name="viewer" respawn="false" output="screen">
+    <param name="camera_name"		value="Gen3_VGA" />
+    <param name="show_frames"		value="true" />
+    <param name="analyze_frames"	value="false" />
+  </node>
+
+</launch>

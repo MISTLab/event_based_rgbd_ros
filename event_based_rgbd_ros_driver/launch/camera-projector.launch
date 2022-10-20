@@ -1,0 +1,39 @@
+<launch>
+
+ <node pkg="event_based_rgbd_ros_driver" type="publisher" name="publisher" respawn="false" output="screen">
+    <param name="camera_name"		value="Gen3_VGA" />
+    <param name="exposure_time"		value="235" />
+    <param name="biases_addr"		value="../catkin_ws/src/event_based_rgbd_ros/event_based_rgbd_ros_driver/cfg/bias_sensitive.bias"/>
+
+    <param name="roi_width"		value="60" />
+    <param name="roi_height"	value="40" />
+    <param name="roi_x"		value="300" />
+    <param name="roi_y"		value="200" />
+    <param name="region_flag"	value="false" />
+
+  </node>
+
+  <node pkg="event_based_rgbd_ros_driver" type="frame_generator" name="frame_generator" respawn="false" output="screen">
+    <param name="camera_name"		value="Gen3_VGA" />
+    <param name="ref_img_addr"		value="../catkin_ws/src/event_based_rgbd_ros/event_based_rgbd_ros_driver/cfg/ref_image.png" />
+
+    <param name="publish_ref"		value="false" />
+    <param name="publish_mono"		value="false" />
+    <param name="publish_bgr"		value="true" />
+    <param name="publish_blue"		value="false" />
+    <param name="publish_green"		value="false" />
+    <param name="publish_red"		value="false" />
+
+    <!-- Frequency of gathering events, in Hz -->
+    <param name="display_accumulation_time" value="30" />
+  </node>
+
+  <node pkg="event_based_rgbd_ros_driver" type="viewer" name="viewer" respawn="false" output="screen">
+    <param name="camera_name"		value="Gen3_VGA" />
+    <param name="show_frames"		value="true" />
+    <param name="analyze_frames"	value="false" />
+  </node>
+
+  <node name="camera_gui_node" pkg="event_based_rgbd_ros_dlp_gui" type="camera_gui_node" output="screen"/>
+
+</launch>

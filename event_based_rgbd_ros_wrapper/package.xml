@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>event_based_rgbd_ros_wrapper</name>
+  <version>0.0.1</version>
+  <description>Event-based RGBD ROS wrapper aided by structured light</description>
+
+  <maintainer email="ehsan.marjani@polymtl.ca">Seyed Ehsan Marjani Bajestani</maintainer>
+  <author email="ehsan.marjani@polymtl.ca">Seyed Ehsan Marjani Bajestani</author>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+    <metapackage/>
+  </export>
+
+  <run_depend>event_based_rgbd_ros_msgs</run_depend>
+  <run_depend>event_based_rgbd_ros_srvs</run_depend>
+  <run_depend>event_based_rgbd_ros_driver</run_depend>
+  <run_depend>event_based_rgbd_ros_dlp_gui</run_depend>
+
+</package>

@@ -1,0 +1,12 @@
+uint16 width
+uint16 height
+uint16 x
+uint16 y
+uint8 status
+uint8 get
+---
+uint16 result_width
+uint16 result_height
+uint16 result_x
+uint16 result_y
+uint8 result_status

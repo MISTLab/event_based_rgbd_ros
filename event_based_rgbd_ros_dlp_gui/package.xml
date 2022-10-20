@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>event_based_rgbd_ros_dlp_gui</name>
+  <version>0.0.0</version>
+  <description>Event-based RGBD ROS GUI aided by structured light</description>
+
+  <maintainer email="ehsan.marjani@polymtl.ca">Seyed Ehsan Marjani Bajestani</maintainer>
+  <author email="ehsan.marjani@polymtl.ca">Seyed Ehsan Marjani Bajestani</author>
+
+  <license>Apache 2.0</license>
+
+  <depend>catkin</depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>qtbase5-dev</depend>
+  <depend>libboost-date-time-dev</depend>
+  <depend>libboost-thread-dev</depend>
+  <depend>message_generation</depend>
+  <depend>rosconsole</depend>
+  <depend>roscpp_serialization</depend>
+  <depend>rostime</depend>
+  <depend>libqt5-core</depend>
+  <depend>libqt5-gui</depend>
+  <depend>libqt5-widgets</depend>
+
+  <depend>event_based_rgbd_ros_msgs</depend>
+  <depend>event_based_rgbd_ros_srvs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+</package>

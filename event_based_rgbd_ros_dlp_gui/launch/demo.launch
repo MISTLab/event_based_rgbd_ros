@@ -1,0 +1,3 @@
+<launch>
+  <node name="camera_gui_node" pkg="event_based_rgbd_ros_dlp_gui" type="camera_gui_node" output="screen"/>
+</launch>

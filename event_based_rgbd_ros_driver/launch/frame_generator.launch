@@ -1,0 +1,19 @@
+<launch>
+
+  <node pkg="event_based_rgbd_ros_driver" type="frame_generator" name="frame_generator" respawn="false" output="screen">
+    <param name="camera_name"		value="Gen3_VGA" />
+    <param name="ref_img_addr"		value="../catkin_ws/src/event_based_rgbd_ros/event_based_rgbd_ros_driver/cfg/ref_image.png" />
+
+    <param name="publish_ref"		value="false" />
+    <param name="publish_mono"		value="false" />
+    <param name="publish_bgr"		value="true" />
+    <param name="publish_blue"		value="false" />
+    <param name="publish_green"		value="false" />
+    <param name="publish_red"		value="false" />
+
+
+    <!-- Frequency of gathering events, in Hz -->
+    <param name="display_accumulation_time" value="30" />
+  </node>
+
+</launch>

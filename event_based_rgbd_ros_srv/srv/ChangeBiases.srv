@@ -1,0 +1,5 @@
+string bias_name
+uint16 bias_value
+uint8 get
+---
+uint16 result

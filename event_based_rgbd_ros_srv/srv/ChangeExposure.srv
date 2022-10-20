@@ -1,0 +1,4 @@
+uint16 exposure_time
+uint8 get
+---
+uint16 result
