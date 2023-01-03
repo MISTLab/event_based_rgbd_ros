@@ -1,18 +1,22 @@
 # Event-based RGBD ROS Wrapper
 
-If you reuse parts of this work, please cite the [paper](https://arxiv.org/abs/2207.11605):
+If you reuse parts of this work, please cite the [paper](https://openaccess.thecvf.com/content/WACV2023/html/Bajestani_Event-Based_RGB_Sensing_With_Structured_Light_WACV_2023_paper.html):
 ```
-Seyed Ehsan Marjani Bajestani and Giovanni Beltrame. "Event-based RGB-D sensing with structured light." arXiv preprint arXiv:2207.11605 (2022).
+Seyed Ehsan Marjani Bajestani and Giovanni Beltrame. "Event-based RGB sensing with structured light." Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision. 2023.
 ```
 
 BibTex:
 ```
-@article{bajestani2022event,
-  title={Event-based RGB-D sensing with structured light},
-  author={Bajestani, Seyed Ehsan Marjani and Beltrame, Giovanni},
-  journal={arXiv preprint arXiv:2207.11605},
-  year={2022}
-}
+@InProceedings{Bajestani_2023_WACV,
+ author = {Bajestani, Seyed Ehsan Marjani and Beltrame, Giovanni},
+ title = {Event-Based RGB Sensing With Structured Light},
+ booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+ month = {January},
+ year = {2023},
+ pages = {5458-5467},
+ organization={IEEE},
+ url={https://openaccess.thecvf.com/content/WACV2023/html/Bajestani_Event-Based_RGB_Sensing_With_Structured_Light_WACV_2023_paper.html}
+ }
 ```
 
 This metapackage is similar to [Prophesee ROS wrapper](https://github.com/prophesee-ai/prophesee_ros_wrapper.git). However, it is able to control the camera setting online and publish a **stream of color-stamped events** in addition to RGB frames on ROS topics. The GUI is to calibrate the camera with a Symmetric Circles Grid LED Pattern.
